@@ -16,7 +16,7 @@ export const Layout = () => {
                     <header class='bg-gradient-to-r from-red-700 via-zinc-800 to-black'>
                         <nav class='flex justify-between text-center p-7 font-bold text-[0.8rem] md:text-2xl lg:text-3xl'>
                             <Link to='/'>
-                            <h4 class='text-[1.2rem] '>UP5</h4>
+                            <h4 class='text-[1.2rem] '>UP5 ACADEMY</h4>
                             </Link>
                             <ul class='gap-7 hidden md:flex lg:flex'>
                                 <Link to='/about'>
