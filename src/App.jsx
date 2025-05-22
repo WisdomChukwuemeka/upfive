@@ -16,6 +16,7 @@ export const App = () => {
             <Route index element={<Home />} />
             <Route path="registration" element={<RegistrationForm />} />
             <Route path='about' element={<AboutSection />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
         <div className='mt-auto w-full'>
