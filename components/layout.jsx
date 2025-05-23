@@ -50,20 +50,20 @@ export const Layout = () => {
                             transition={{
                                 duration: 1,
                             }}
-                            class='bg-red-500 w-50 h-fit text-center p-3 text-white absolute right-0'>
-                                <ul class='flex flex-col  gap-7 '>
-                                    <div class='bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
+                            class='bg-red-500 w-50 h-[100dvh] text-center p-3 text-white absolute right-0'>
+                                <ul class='flex flex-col  gap-7'>
+                                    <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
                                         <Link to='/about'>
                                         <li>About</li>
                                         </Link>  
                                     </div>
-                                    <div class='bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
+                                    <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
                                         <li>Profile</li>
                                     </div>
-                                    <div class='bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
+                                    <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
                                         <li>Contact</li>
                                     </div>
-                                    <div class='bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
+                                    <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
                                         <li>Support</li>
                                     </div>
                             </ul>
