@@ -29,7 +29,7 @@ export const Support = () => {
           a: 'Log into your student dashboard and click on "My Courses". All your enrolled courses will be displayed with progress indicators and direct access links.'
         },
         {
-          q: 'Why can\'t I see my course materials?',
+          q: "Why can\'t I see my course materials?",
           a: 'This could be due to: 1) Course hasn\'t started yet, 2) Payment pending, 3) Browser cache issues. Try clearing your browser cache or contact support.'
         },
         {
