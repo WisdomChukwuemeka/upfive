@@ -122,10 +122,10 @@ export const Courses = () => {
                   {/* Like Button - positioned in top right */}
                   <button
                     onClick={() => handleLikeClick(course.id)}
-                    className={`absolute top-4 right-4 p-2 rounded-full transition-all duration-200 ₦{
+                    className={`absolute top-4 right-4 p-2 rounded-full text-white transition-all duration-200 ₦{
                       isLiked 
-                        ? 'bg-red-500 text-white shadow-lg' 
-                        : 'bg-white/20 text-white hover:bg-white/30'
+                        ? 'bg-red-500 shadow-lg' 
+                        : 'bg-white/20 hover:bg-white/30'
                     }`}
                   >
                     <Heart 

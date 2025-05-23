@@ -16,10 +16,10 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="registration" element={<RegistrationForm />} />
-            <Route path='about' element={<AboutSection />} />
-            <Route path="profile" element={<Profile />}/>
-            <Route path="support" element={<Support />} />
+            <Route path="upfive/registration" element={<RegistrationForm />} />
+            <Route path='upfive/about' element={<AboutSection />} />
+            <Route path="upfive/profile" element={<Profile />}/>
+            <Route path="upfive/support" element={<Support />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

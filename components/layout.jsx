@@ -19,14 +19,14 @@ export const Layout = () => {
                             <h4 class='text-[1.2rem] '>Coming...</h4>
                             </Link>
                             <ul class='gap-7 hidden md:flex lg:flex'>
-                                <Link to='/about'>
+                                <Link to='upfive/about'>
                                 <li>About</li>
                                 </Link>
-                                <Link to='/profile'>
+                                <Link to='upfive/profile'>
                                 <li>Profile</li>
                                 </Link>
                                 <li>Contact</li>
-                                <Link to='support'>
+                                <Link to='upfive/support'>
                                 <li>Support</li>
                                 </Link>
                             </ul>
@@ -56,12 +56,12 @@ export const Layout = () => {
                             class='z-20 bg-red-500 w-50 h-screen text-center p-3 text-white absolute right-0 md:hidden lg:hidden'>
                                 <ul class='flex flex-col  gap-7'>
                                     <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
-                                        <Link to='/about'>
+                                        <Link to='upfive/about'>
                                         <li>About</li>
                                         </Link>  
                                     </div>
                                     <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
-                                        <Link to='/profile'>
+                                        <Link to='upfive/profile'>
                                         <li>Profile</li>
                                         </Link>
                                     </div>
@@ -69,7 +69,7 @@ export const Layout = () => {
                                         <li>Contact</li>
                                     </div>
                                     <div class='border-b-2 bg-gradient-to-r hover:from-black hover:via-red-700 hover:to-white transition duration-500'>
-                                        <Link to='support'>
+                                        <Link to='upfive/support'>
                                         <li>Support</li>
                                         </Link>
                                     </div>
