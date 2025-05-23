@@ -29,8 +29,8 @@ export const Support = () => {
           a: 'Log into your student dashboard and click on "My Courses". All your enrolled courses will be displayed with progress indicators and direct access links.'
         },
         {
-          q: "Why can\'t I see my course materials?",
-          a: 'This could be due to: 1) Course hasn\'t started yet, 2) Payment pending, 3) Browser cache issues. Try clearing your browser cache or contact support.'
+          q: "Why can't I see my course materials?",
+          a: "This could be due to: 1) Course hasn't started yet, 2) Payment pending, 3) Browser cache issues. Try clearing your browser cache or contact support."
         },
         {
           q: 'Can I download course videos for offline viewing?',
@@ -46,8 +46,8 @@ export const Support = () => {
           a: 'Try these steps: 1) Refresh the page, 2) Clear browser cache, 3) Disable ad blockers, 4) Try a different browser. If issues persist, submit a technical support ticket.'
         },
         {
-          q: 'I\'m having trouble with the coding environment',
-          a: 'Our cloud IDE works best with Chrome or Firefox. Ensure pop-ups are enabled and try incognito mode. For persistent issues, check our system requirements guide.'
+          q: "I'm having trouble with the coding environment",
+          a: "Our cloud IDE works best with Chrome or Firefox. Ensure pop-ups are enabled and try incognito mode. For persistent issues, check our system requirements guide."
         }
       ]
     },
@@ -292,7 +292,7 @@ export const Support = () => {
                       onChange={(e) => setChatMessage(e.target.value)}
                       placeholder="Type your message..."
                       class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-l-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      onKeyPress={(e) => e.key === 'Enter' && handleChatSend()}
+                      onKeyDown={(e) => e.key === 'Enter' && handleChatSend()}
                     />
                     <button
                       onClick={handleChatSend}
