@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Heart, Star, Clock, Users, CheckCircle } from "lucide-react";
-
+import image from '../image/girlone.png';
 export const Courses = () => {
   // Simple state to track which courses are liked - using course IDs
   const [likedCourses, setLikedCourses] = useState([]);
@@ -116,7 +116,7 @@ export const Courses = () => {
                 {/* Course Image */}
                 <div className="h-48 bg-gradient-to-r from-red-700 to-black flex items-center justify-center relative">
                   <div className="text-6xl">
-                    <img class='aspect-[16/9]' src={course.image} alt="" />
+                    <img class='aspect-[16/9]' src={image} alt="" />
                   </div>
                   
                   {/* Like Button - positioned in top right */}
