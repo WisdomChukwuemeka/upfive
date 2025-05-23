@@ -11,7 +11,7 @@ import { Support } from "../pages/support"
 export const App = () => {
   return(
     <>
-      <div className='flex overflow-hidden flex-col min-h-[100dvh] w-[100vw] bg-black'>
+      <div class='flex overflow-hidden flex-col min-h-[100dvh] w-[100vw] bg-black'>
         
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -24,7 +24,7 @@ export const App = () => {
           </Route>
         </Routes>
         
-        <div className='mt-auto w-full z-10'>
+        <div class='mt-auto w-full z-10'>
           <Footer />
         </div>
       </div>

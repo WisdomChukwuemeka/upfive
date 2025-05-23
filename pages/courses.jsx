@@ -93,81 +93,81 @@ export const Courses = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
+      <div class="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-gray-800 mb-4">
             Popular Courses
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
             Choose from our selection of high-quality courses and start learning today
           </p>
         </div>
 
         {/* Courses Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course) => {
             // Check if this course is liked
             const isLiked = likedCourses.includes(course.id);
             
             return (
-              <div key={course.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div key={course.id} class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                 {/* Course Image */}
-                <div className="h-48 bg-gradient-to-r from-red-700 to-black flex items-center justify-center relative">
-                  <div className="text-6xl">
+                <div class="h-48 bg-gradient-to-r from-red-700 to-black flex items-center justify-center relative">
+                  <div class="text-6xl">
                     <img class='aspect-[16/9]' src={image} alt="" />
                   </div>
                   
                   {/* Like Button - positioned in top right */}
                   <button
                     onClick={() => handleLikeClick(course.id)}
-                    className={`absolute top-4 right-4 p-2 rounded-full text-white transition-all duration-200 ₦{
+                    class={`absolute top-4 right-4 p-2 rounded-full text-white transition-all duration-200 ₦{
                       isLiked 
                         ? 'bg-red-500 shadow-lg' 
                         : 'bg-white/20 hover:bg-white/30'
                     }`}
                   >
                     <Heart 
-                      className={`w-5 h-5 ₦{isLiked ? 'fill-current' : ''}`} 
+                      class={`w-5 h-5 ₦{isLiked ? 'fill-current' : ''}`} 
                     />
                   </button>
                 </div>
 
-                <div className="p-6">
+                <div class="p-6">
                   {/* Course Title */}
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
                     {course.title}
                   </h3>
                   
                   {/* Course Description */}
-                  <p className="text-gray-600 mb-4 text-sm">
+                  <p class="text-gray-600 mb-4 text-sm">
                     {course.description}
                   </p>
 
                   {/* Course Stats */}
-                  <div className="flex items-center gap-4 mb-4 text-sm text-gray-500">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-yellow-500" />
+                  <div class="flex items-center gap-4 mb-4 text-sm text-gray-500">
+                    <div class="flex items-center gap-1">
+                      <Star class="w-4 h-4 text-yellow-500" />
                       <span>{course.rating}</span>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
+                    <div class="flex items-center gap-1">
+                      <Users class="w-4 h-4" />
                       <span>{course.students.toLocaleString()}</span>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
+                    <div class="flex items-center gap-1">
+                      <Clock class="w-4 h-4" />
                       <span>{course.duration}</span>
                     </div>
                   </div>
 
                   {/* Course Features */}
-                  <div className="mb-6">
-                    <div className="flex flex-wrap gap-2">
+                  <div class="mb-6">
+                    <div class="flex flex-wrap gap-2">
                       {course.features.map((feature, index) => (
                         <span 
                           key={index}
-                          className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
+                          class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
                         >
                           {feature}
                         </span>
@@ -176,20 +176,20 @@ export const Courses = () => {
                   </div>
 
                   {/* Pricing and Subscribe */}
-                  <div className="border-t pt-4">
-                    <div className="flex items-center justify-between mb-4">
+                  <div class="border-t pt-4">
+                    <div class="flex items-center justify-between mb-4">
                       <div>
-                        <span className="text-2xl font-bold text-gray-800">
+                        <span class="text-2xl font-bold text-gray-800">
                           ₦{course.price}
                         </span>
-                        <span className="text-sm text-gray-500 line-through ml-2">
+                        <span class="text-sm text-gray-500 line-through ml-2">
                           ₦{course.originalPrice}
                         </span>
-                        <div className="text-xs text-gray-500">per month</div>
+                        <div class="text-xs text-gray-500">per month</div>
                       </div>
                     </div>
                     
-                    <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
+                    <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
                       Start Free Trial
                     </button>
                   </div>
@@ -201,9 +201,9 @@ export const Courses = () => {
 
         {/* Liked Courses Counter */}
         {likedCourses.length > 0 && (
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 px-6 py-3 rounded-full">
-              <Heart className="w-5 h-5 fill-current" />
+          <div class="mt-12 text-center">
+            <div class="inline-flex items-center gap-2 bg-red-50 text-red-700 px-6 py-3 rounded-full">
+              <Heart class="w-5 h-5 fill-current" />
               <span>
                 You liked {likedCourses.length} course{likedCourses.length !== 1 ? 's' : ''}!
               </span>

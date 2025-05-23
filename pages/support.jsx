@@ -124,28 +124,28 @@ export const Support = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br to-slate-900">
+    <div class="min-h-screen bg-gradient-to-br to-slate-900">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-        <div className="relative max-w-7xl mx-auto px-6 py-16">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-6 bg-white bg-clip-text text-transparent">
+      <div class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <div class="relative max-w-7xl mx-auto px-6 py-16">
+          <div class="text-center">
+            <h1 class="text-5xl font-bold mb-6 bg-white bg-clip-text text-transparent">
               Coming Support Center
             </h1>
-            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
+            <p class="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
               Get the help you need to succeed in your learning journey. Our expert support team is here 24/7.
             </p>
             
             {/* Search Bar */}
-            <div className="relative max-w-2xl mx-auto mb-12">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <div class="relative max-w-2xl mx-auto mb-12">
+              <Search class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
                 placeholder="Search for help articles, tutorials, or common issues..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                class="w-full pl-12 pr-4 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -153,38 +153,38 @@ export const Support = () => {
       </div>
 
       {/* Support Stats */}
-      <div className="max-w-7xl mx-auto px-6 -mt-8 mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="max-w-7xl mx-auto px-6 -mt-8 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {supportStats.map((stat, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center">
-              <stat.icon className="w-8 h-8 text-blue-400 mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-gray-300 text-sm">{stat.label}</div>
+            <div key={index} class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center">
+              <stat.icon class="w-8 h-8 text-blue-400 mx-auto mb-3" />
+              <div class="text-2xl font-bold text-white mb-1">{stat.value}</div>
+              <div class="text-gray-300 text-sm">{stat.label}</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* Support Channels */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">Choose Your Support Channel</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="max-w-7xl mx-auto px-6 mb-16">
+        <h2 class="text-3xl font-bold text-white mb-8 text-center">Choose Your Support Channel</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {supportChannels.map((channel, index) => (
             <div 
               key={index} 
-              className={`relative overflow-hidden rounded-2xl p-6 text-white cursor-pointer transform hover:scale-105 transition-all duration-300 ${
+              class={`relative overflow-hidden rounded-2xl p-6 text-white cursor-pointer transform hover:scale-105 transition-all duration-300 ${
                 channel.available ? 'hover:shadow-2xl' : 'opacity-60 cursor-not-allowed'
               }`}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${channel.bgGradient}`}></div>
-              <div className="relative z-10">
-                <channel.icon className="w-8 h-8 mb-4" />
-                <h3 className="text-xl font-bold mb-2">{channel.title}</h3>
-                <p className="text-sm opacity-90 mb-3">{channel.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs opacity-75">{channel.responseTime}</span>
+              <div class={`absolute inset-0 bg-gradient-to-br ${channel.bgGradient}`}></div>
+              <div class="relative z-10">
+                <channel.icon class="w-8 h-8 mb-4" />
+                <h3 class="text-xl font-bold mb-2">{channel.title}</h3>
+                <p class="text-sm opacity-90 mb-3">{channel.description}</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs opacity-75">{channel.responseTime}</span>
                   {channel.available && (
-                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                   )}
                 </div>
               </div>
@@ -194,10 +194,10 @@ export const Support = () => {
       </div>
 
       {/* Main Content Tabs */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 mb-16">
+        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl overflow-hidden">
           {/* Tab Navigation */}
-          <div className="flex border-b border-white/20">
+          <div class="flex border-b border-white/20">
             {[
               { id: 'faq', label: 'FAQ', icon: BookOpen },
               { id: 'chat', label: 'Live Chat', icon: MessageCircle },
@@ -206,51 +206,51 @@ export const Support = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center px-6 py-4 text-sm font-medium transition-colors ${
+                class={`flex items-center px-6 py-4 text-sm font-medium transition-colors ${
                   activeTab === tab.id
                     ? 'text-blue-400 border-b-2 border-blue-400 bg-white/5'
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
               >
-                <tab.icon className="w-4 h-4 mr-2" />
+                <tab.icon class="w-4 h-4 mr-2" />
                 {tab.label}
               </button>
             ))}
           </div>
 
           {/* Tab Content */}
-          <div className="p-8">
+          <div class="p-8">
             {activeTab === 'faq' && (
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h3>
+                <h3 class="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h3>
                 {filteredFaqs.length === 0 ? (
-                  <div className="text-center py-12">
-                    <AlertCircle className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-400">No FAQs found matching your search.</p>
+                  <div class="text-center py-12">
+                    <AlertCircle class="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                    <p class="text-gray-400">No FAQs found matching your search.</p>
                   </div>
                 ) : (
-                  <div className="space-y-6">
+                  <div class="space-y-6">
                     {filteredFaqs.map((category, categoryIndex) => (
                       <div key={categoryIndex}>
-                        <h4 className="text-lg font-semibold text-blue-400 mb-4">{category.category}</h4>
-                        <div className="space-y-3">
+                        <h4 class="text-lg font-semibold text-blue-400 mb-4">{category.category}</h4>
+                        <div class="space-y-3">
                           {category.questions.map((faq, faqIndex) => (
                             <div 
                               key={faqIndex}
-                              className="bg-white/5 border border-white/10 rounded-xl overflow-hidden"
+                              class="bg-white/5 border border-white/10 rounded-xl overflow-hidden"
                             >
                               <button
                                 onClick={() => setExpandedFaq(expandedFaq === `${categoryIndex}-${faqIndex}` ? null : `${categoryIndex}-${faqIndex}`)}
-                                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                                class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
                               >
-                                <span className="text-white font-medium">{faq.q}</span>
+                                <span class="text-white font-medium">{faq.q}</span>
                                 {expandedFaq === `${categoryIndex}-${faqIndex}` ? 
-                                  <ChevronDown className="w-5 h-5 text-gray-400" /> : 
-                                  <ChevronRight className="w-5 h-5 text-gray-400" />
+                                  <ChevronDown class="w-5 h-5 text-gray-400" /> : 
+                                  <ChevronRight class="w-5 h-5 text-gray-400" />
                                 }
                               </button>
                               {expandedFaq === `${categoryIndex}-${faqIndex}` && (
-                                <div className="px-6 pb-4 text-gray-300 leading-relaxed">
+                                <div class="px-6 pb-4 text-gray-300 leading-relaxed">
                                   {faq.a}
                                 </div>
                               )}
@@ -266,39 +266,39 @@ export const Support = () => {
 
             {activeTab === 'chat' && (
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Live Chat Support</h3>
-                <div className="bg-white/5 border border-white/10 rounded-xl p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mr-3">
-                      <User className="w-5 h-5 text-white" />
+                <h3 class="text-2xl font-bold text-white mb-6">Live Chat Support</h3>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+                  <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center mr-3">
+                      <User class="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <div className="text-white font-medium">Support Agent Sarah</div>
-                      <div className="text-green-400 text-sm flex items-center">
-                        <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+                      <div class="text-white font-medium">Support Agent Sarah</div>
+                      <div class="text-green-400 text-sm flex items-center">
+                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                         Online - Average response time: 3 minutes
                       </div>
                     </div>
                   </div>
                   
-                  <div className="bg-white/5 rounded-lg p-4 mb-4 min-h-[200px] border border-white/10">
-                    <div className="text-gray-400 text-sm mb-4">Chat will appear here...</div>
+                  <div class="bg-white/5 rounded-lg p-4 mb-4 min-h-[200px] border border-white/10">
+                    <div class="text-gray-400 text-sm mb-4">Chat will appear here...</div>
                   </div>
                   
-                  <div className="flex">
+                  <div class="flex">
                     <input
                       type="text"
                       value={chatMessage}
                       onChange={(e) => setChatMessage(e.target.value)}
                       placeholder="Type your message..."
-                      className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-l-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-l-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       onKeyPress={(e) => e.key === 'Enter' && handleChatSend()}
                     />
                     <button
                       onClick={handleChatSend}
-                      className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-r-xl hover:from-blue-600 hover:to-purple-700 transition-colors"
+                      class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-r-xl hover:from-blue-600 hover:to-purple-700 transition-colors"
                     >
-                      <Send className="w-5 h-5" />
+                      <Send class="w-5 h-5" />
                     </button>
                   </div>
                 </div>
@@ -307,26 +307,26 @@ export const Support = () => {
 
             {activeTab === 'ticket' && (
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Submit Support Ticket</h3>
-                <form onSubmit={handleTicketSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <h3 class="text-2xl font-bold text-white mb-6">Submit Support Ticket</h3>
+                <form onSubmit={handleTicketSubmit} class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-white font-medium mb-2">Subject</label>
+                      <label class="block text-white font-medium mb-2">Subject</label>
                       <input
                         type="text"
                         value={ticketForm.subject}
                         onChange={(e) => setTicketForm({...ticketForm, subject: e.target.value})}
-                        className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Brief description of your issue"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-white font-medium mb-2">Category</label>
+                      <label class="block text-white font-medium mb-2">Category</label>
                       <select
                         value={ticketForm.category}
                         onChange={(e) => setTicketForm({...ticketForm, category: e.target.value})}
-                        className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                       >
                         <option value="">Select Category</option>
@@ -340,31 +340,31 @@ export const Support = () => {
                   </div>
                   
                   <div>
-                    <label className="block text-white font-medium mb-2">Priority</label>
-                    <div className="flex space-x-4">
+                    <label class="block text-white font-medium mb-2">Priority</label>
+                    <div class="flex space-x-4">
                       {['low', 'medium', 'high', 'urgent'].map((priority) => (
-                        <label key={priority} className="flex items-center">
+                        <label key={priority} class="flex items-center">
                           <input
                             type="radio"
                             name="priority"
                             value={priority}
                             checked={ticketForm.priority === priority}
                             onChange={(e) => setTicketForm({...ticketForm, priority: e.target.value})}
-                            className="mr-2"
+                            class="mr-2"
                           />
-                          <span className="text-white capitalize">{priority}</span>
+                          <span class="text-white capitalize">{priority}</span>
                         </label>
                       ))}
                     </div>
                   </div>
                   
                   <div>
-                    <label className="block text-white font-medium mb-2">Description</label>
+                    <label class="block text-white font-medium mb-2">Description</label>
                     <textarea
                       value={ticketForm.description}
                       onChange={(e) => setTicketForm({...ticketForm, description: e.target.value})}
                       rows={6}
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                      class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                       placeholder="Please provide detailed information about your issue..."
                       required
                     />
@@ -372,7 +372,7 @@ export const Support = () => {
                   
                   <button
                     type="submit"
-                    className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-xl hover:from-blue-600 hover:to-purple-700 transition-colors"
+                    class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-xl hover:from-blue-600 hover:to-purple-700 transition-colors"
                   >
                     Submit Support Ticket
                   </button>
@@ -384,16 +384,16 @@ export const Support = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-black/20 backdrop-blur-md border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="text-center">
-            <p className="text-gray-400 mb-4">
+      <footer class="bg-black/20 backdrop-blur-md border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+          <div class="text-center">
+            <p class="text-gray-400 mb-4">
               Need immediate assistance? Our support team is available 24/7
             </p>
-            <div className="flex justify-center space-x-6">
-              <span className="text-gray-300">📧 support@coming.edu</span>
-              <span className="text-gray-300">📞 1-800-Coming</span>
-              <span className="text-gray-300">💬 Live Chat Always Open</span>
+            <div class="flex justify-center space-x-6">
+              <span class="text-gray-300">📧 support@coming.edu</span>
+              <span class="text-gray-300">📞 1-800-Coming</span>
+              <span class="text-gray-300">💬 Live Chat Always Open</span>
             </div>
           </div>
         </div>
