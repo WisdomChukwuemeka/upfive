@@ -63,7 +63,7 @@ export const AboutSection = () => {
             <Code className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            About UP5 Academy
+            About Coming
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Empowering the next generation of tech professionals through innovative education, 
@@ -94,7 +94,7 @@ export const AboutSection = () => {
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Founded in 2018, UP5 Academy emerged from a simple yet powerful vision: 
+                Founded in 2018, Coming emerged from a simple yet powerful vision: 
                 to bridge the gap between traditional education and the rapidly evolving tech industry.
               </p>
               <p>

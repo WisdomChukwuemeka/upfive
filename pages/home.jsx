@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import { Courses } from "./courses"
 export const Home = ()=>{
     return(
         <>
@@ -17,6 +17,10 @@ export const Home = ()=>{
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <Courses />
             </section>
         </>
     )

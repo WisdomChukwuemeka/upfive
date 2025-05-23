@@ -21,73 +21,73 @@ export const Courses = () => {
     {
       id: 1,
       title: "Complete Web Development",
-      description: "Learn HTML, CSS, JavaScript, React, and Node.js from scratch",
-      price: 300000,
-      originalPrice: 400000,
+      description: "Learn HTML, CSS, JavaScript, React from scratch",
+      price: '300000',
+      originalPrice: '400000',
       rating: 4.9,
       students: 15430,
       duration: "4 months",
-      image: "💻",
-      features: ["HTML5 & CSS3", "JavaScript ES6+", "React.js", "Python", 'Django']
+      image: ("upfive/images/html.png"),
+      features: ["HTML5 & CSS3", "React.js", "Python", 'Django']
     },
     {
       id: 2,
       title: "Python",
       description: "Master Python programming",
-      price: 200000,
-      originalPrice: 350000,
+      price: '200000',
+      originalPrice: '350000',
       rating: 4.8,
       students: 12850,
       duration: "2 months",
-      image: "🐍",
+      image: ("upfive/images/futuristic-portrait-young-girl-with-high-tech.png"),
       features: ["Python"]
     },
     {
       id: 3,
       title: "Mobile App Development",
       description: "Build iOS and Android apps with React Native and Flutter",
-      price: 500000,
-      originalPrice: 550000,
+      price: '500000',
+      originalPrice: '550000',
       rating: 4.7,
       students: 8920,
       duration: "45 hours",
-      image: "📱",
+      image: ("upfive/images/representation-user-experience-interface-design.png"),
       features: ["React Native", "Flutter", "Firebase", "App Store Deploy"]
     },
     {
       id: 4,
       title: "Digital Marketing Mastery",
-      description: "Complete guide to marketing, social media, and online advertising",
-      price: 150000,
-      originalPrice: 200000,
+      description: "Full guide to marketing, social media, and advertising",
+      price: '150000',
+      originalPrice: '200000',
       rating: 4.6,
       students: 18750,
       duration: "1 month",
-      image: "📈",
+      image: ("upfive/images/portrait-woman-surrounded-by-money (1).png"),
       features: ["Social Media", "Google Ads", "Analytics"]
     },
     {
       id: 5,
       title: "UI/UX Design Complete",
-      description: "Learn design principles, Figma, and user experience research",
-      price: 150000,
-      originalPrice: 200000,
+      description: "Learn design principles, Figma, and user experience",
+      price: '150000',
+      originalPrice: '200000',
       rating: 4.8,
       students: 11200,
       duration: "2 months",
-      image: "🎨",
+      image: ("upfive/images/Gemini_Generated_Image_51390e51390e5139.png"),
       features: ["Design Principles", "Figma", "User Research", "Prototyping"]
     },
     {
       id: 6,
       title: "Cloud Computing AWS",
       description: "Master Amazon Web Services and cloud infrastructure",
-      price: 300000,
-      originalPrice: 400000,
+      price: '300000',
+      originalPrice: '400000',
       rating: 4.9,
       students: 7640,
       duration: "2 months",
-      image: "☁️",
+      image: ("upfive/images/classroom.png"),
       features: ["AWS Services", "Cloud Architecture", "DevOps", "Security"]
     }
   ];
@@ -115,19 +115,21 @@ export const Courses = () => {
               <div key={course.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                 {/* Course Image */}
                 <div className="h-48 bg-gradient-to-r from-red-700 to-black flex items-center justify-center relative">
-                  <div className="text-6xl">{course.image}</div>
+                  <div className="text-6xl">
+                    <img class='aspect-[16/9]' src={course.image} alt="" />
+                  </div>
                   
                   {/* Like Button - positioned in top right */}
                   <button
                     onClick={() => handleLikeClick(course.id)}
-                    className={`absolute top-4 right-4 p-2 rounded-full transition-all duration-200 ${
+                    className={`absolute top-4 right-4 p-2 rounded-full transition-all duration-200 ₦{
                       isLiked 
                         ? 'bg-red-500 text-white shadow-lg' 
                         : 'bg-white/20 text-white hover:bg-white/30'
                     }`}
                   >
                     <Heart 
-                      className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} 
+                      className={`w-5 h-5 ₦{isLiked ? 'fill-current' : ''}`} 
                     />
                   </button>
                 </div>
